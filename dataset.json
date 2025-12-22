@@ -1,0 +1,157 @@
+{
+  "sidebar": [
+    { "id": "all", "label": "Home", "icon": "icons/home.svg" },
+    { "id": "explore", "label": "Explore", "icon": "icons/explore.svg" },
+    { "id": "subscriptions", "label": "Subscriptions", "icon": "icons/subscriptions.svg" },
+    { "id": "originals", "label": "Originals", "icon": "icons/originals.svg" },
+    { "id": "music", "label": "YouTube Music", "icon": "icons/youtube-music.svg" },
+    { "id": "library", "label": "Library", "icon": "icons/library.svg" }
+  ],
+  "videos": [
+    {
+      "id": "v1",
+      "title": "Everything I read in 2023",
+      "author": "Leena Bowing",
+      "views": "1.2M",
+      "age": "3 weeks ago",
+      "thumbnail": "thumbnails/6dec26d7c44eadb7276764dee2224f5d.jpg",
+      "channelPicture": "e0af562f1889be281e3052c2aea5ae37.jpg",
+      "likes": 12400,
+      "dislikes": 240,
+      "channelSubscribers": 52000,
+      "categories": ["all", "originals"]
+    },
+    {
+      "id": "v2",
+      "title": "The Summer Haul",
+      "author": "Anna's Digital Archive",
+      "views": "7.2M",
+      "age": "1 day ago",
+      "thumbnail": "thumbnails/14f3c2e46eb6e4b7612fd2a6209236b4.jpg",
+      "channelPicture": "e0af562f1889be281e3052c2aea5ae37.jpg",
+      "likes": 720000,
+      "dislikes": 14000,
+      "channelSubscribers": 1200000,
+      "categories": ["all", "explore"]
+    },
+    {
+      "id": "v3",
+      "title": "What I eat in a day",
+      "author": "Anna's Digital Archive",
+      "views": "32M",
+      "age": "30 days ago",
+      "thumbnail": "thumbnails/e54bb558afbe51a88b2b3787034d744d.jpg",
+      "channelPicture": "e0af562f1889be281e3052c2aea5ae37.jpg",
+      "likes": 3200000,
+      "dislikes": 45000,
+      "channelSubscribers": 1200000,
+      "categories": ["all", "library"]
+    },
+    {
+      "id": "v4",
+      "title": "Live to your fullest",
+      "author": "Diary 007",
+      "views": "40M",
+      "age": "9 days ago",
+      "thumbnail": "thumbnails/97f978ae09fbeaa698eb115a428912ae.jpg",
+      "channelPicture": "e0af562f1889be281e3052c2aea5ae37.jpg",
+      "likes": 4000000,
+      "dislikes": 120000,
+      "channelSubscribers": 3400000,
+      "categories": ["all", "subscriptions"]
+    },
+    {
+      "id": "v5",
+      "title": "Life In Spain Vlog",
+      "author": "Natasha Bookins",
+      "views": "200k",
+      "age": "1 day ago",
+      "thumbnail": "thumbnails/9745a331f84665f2227192f937d0c6c7.jpg",
+      "channelPicture": "e0af562f1889be281e3052c2aea5ae37.jpg",
+      "likes": 200000,
+      "dislikes": 3000,
+      "channelSubscribers": 88000,
+      "categories": ["all", "explore"]
+    },
+    {
+      "id": "v6",
+      "title": "Get your personality back!",
+      "author": "Anna's Digital Archive",
+      "views": "70.2M",
+      "age": "20 days ago",
+      "thumbnail": "thumbnails/a3d4e1775455c8bb359caac220380d1f.jpg",
+      "channelPicture": "e0af562f1889be281e3052c2aea5ae37.jpg",
+      "likes": 7020000,
+      "dislikes": 98000,
+      "channelSubscribers": 1200000,
+      "categories": ["all", "originals"]
+    },
+    {
+      "id": "v7",
+      "title": "Room Tour",
+      "author": "Leena Bowing",
+      "views": "12M",
+      "age": "1 day ago",
+      "thumbnail": "thumbnails/a022b73ebffce1950cf074555a3e516a.jpg",
+      "channelPicture": "e0af562f1889be281e3052c2aea5ae37.jpg",
+      "likes": 1200000,
+      "dislikes": 22000,
+      "channelSubscribers": 52000,
+      "categories": ["all", "library"]
+    },
+    {
+      "id": "v8",
+      "title": "Thoughts at midnight",
+      "author": "Life of Zoya",
+      "views": "30K",
+      "age": "10 days ago",
+      "thumbnail": "thumbnails/bdc2dbd679652303ebb1afafa77fce92.jpg",
+      "channelPicture": "e0af562f1889be281e3052c2aea5ae37.jpg",
+      "likes": 30000,
+      "dislikes": 600,
+      "channelSubscribers": 8200,
+      "categories": ["all", "subscriptions"]
+    },
+    {
+      "id": "v9",
+      "title": "Rebuilt your life",
+      "author": "Life of Zoya",
+      "views": "30K",
+      "age": "1 month ago",
+      "thumbnail": "thumbnails/4427c468c1c357a24f466e5a0710517a.jpg",
+      "channelPicture": "e0af562f1889be281e3052c2aea5ae37.jpg",
+      "likes": 30000,
+      "dislikes": 600,
+      "channelSubscribers": 8200,
+      "categories": ["all", "subscriptions"]
+    },
+    {
+      "id": "v10",
+      "title": "Corchet with me!",
+      "author": "Yarn days",
+      "views": "700K",
+      "age": "10 days ago",
+      "thumbnail": "thumbnails/555f155324a23e665d6987c796c931dc.jpg",
+      "channelPicture": "e0af562f1889be281e3052c2aea5ae37.jpg",
+      "likes": 30000,
+      "dislikes": 600,
+      "channelSubscribers": 8200,
+      "categories": ["all", "subscriptions"]
+    }
+  ]
+  ,
+  "notifications": [
+    { "id": "n1", "videoId": "v7", "title": "New comment on 'Room Tour'", "from": "Leena Bowing", "time": "2h ago", "unread": true },
+    { "id": "n2", "videoId": "v6", "title": "Anna's Digital Archive uploaded 'Get your personality back!'", "from": "Anna's Digital Archive", "time": "1 day ago", "unread": true },
+    { "id": "n3", "videoId": "v1", "title": "New featured video: Everything I read in 2023", "from": "Leena Bowing", "time": "3 days ago", "unread": true },
+    { "id": "n4", "videoId": "v3", "title": "Anna's Digital Archive commented on 'What I eat in a day'", "from": "Anna's Digital Archive", "time": "5 days ago", "unread": false },
+    { "id": "n5", "videoId": "v5", "title": "New subscriber: Natasha Bookins", "from": "Natasha Bookins", "time": "7 days ago", "unread": false }
+  ]
+  ,
+  "user": {
+    "name": "Your Name",
+    "email": "you@example.com",
+    "about": "This is a short bio about the user. You can edit this.",
+    "avatar": "e0af562f1889be281e3052c2aea5ae37.jpg"
+  }
+}
