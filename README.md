@@ -1,44 +1,36 @@
 # YouTube Clone - React Single Page Application (SPA)
 
+### 🔗 [View Live Demo And Test It Yourself!](https://osh-mkumar.github.io/Youtube-FrontendClone/#/)
+
 A high-fidelity YouTube frontend clone built as a **Single Page Application (SPA)** using **React**. This project replicates the core user experience of YouTube, featuring dynamic video rendering, real-time search, and a robust persistence layer using LocalStorage.
 
-## 🚀 All Integrated Features
+---
 
-### 📺 Video Experience
+## 🚀 Key Features
 
-* **Dynamic SPA Routing:** Utilizes hash-based routing (`#/video/:id`) to switch views without page reloads.
-* **Video Player Page:** A dedicated view for each video featuring a player placeholder, metadata, and interactive engagement tools.
-* **Smart "Up Next" Recommendations:** A sidebar on the video page that dynamically filters the current video out of the list to show related content.
-* **Engagement Suite:** * **Interactive Like/Dislike:** Includes toggle logic (liking a video automatically removes a dislike and vice versa).
-* **Live Subscriber Count:** Real-time increment/decrement of subscriber counts when the "Subscribe" button is toggled.
+* **Dynamic SPA Routing:** Implements custom hash-based routing (`#/video/:id`) to navigate between the home grid and video player pages without page reloads.
+* **Persistent User Interactions:**
+* **Engagement:** Like and Dislike toggles are tracked and saved per video.
+* **Subscription System:** Users can subscribe to creators; state is saved globally and reflects in the "Subscriptions" filter.
+* **Comment System:** Fully functional comment section allowing users to post and store comments locally.
 
 
-
-### 🔍 Discovery & Navigation
-
-* **Global Search:** Real-time filtering of the video grid based on video titles or author names.
-* **Category-Based Filtering:** Filter videos by categories (e.g., "Music", "Gaming") via the sidebar.
-* **Personalized "Subscriptions" Feed:** A unique category that dynamically filters the grid to show only videos from authors the user has subscribed to.
-* **Collapsible Sidebar:** A responsive hamburger menu that toggles the UI layout using a global body class.
-
-### 💬 Social & Profile Features
-
-* **Persistent Comment System:** Users can post public comments. Comments are stored per video and attributed to the current user's profile name.
-* **Advanced Notification System:** * Unread count badge.
-* Dropdown menu with unread status tracking.
-* Deep-linking: Clicking a notification navigates directly to the relevant video.
+* **Live Search & Categorization:**
+* **Instant Search:** Filters the video grid by title and author in real-time.
+* **Category Pills:** Dynamic sidebar items that filter the feed based on video categories.
 
 
 * **User Profile Management:** Interactive modal to update Name, Email, Bio, and Avatar, with global state updates across the header and comments.
+* **Smart Notifications:** Deep-linking functionality that navigates directly to specific videos from the notification dropdown.
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Core Library:** React.js (Hooks: `useState`, `useEffect`)
+* **Frontend Library:** React.js (Hooks: `useState`, `useEffect`)
 * **Routing:** Custom Hash-Routing Logic
-* **Data Layer:** Fetch API with `dataset.json`
-* **Storage:** Window LocalStorage API (for state persistence)
+* **Data Handling:** Fetch API for `dataset.json`
+* **Persistence:** Window LocalStorage API
 * **Styling:** Modular CSS3 (Flexbox & CSS Grid)
 
 ---
@@ -46,17 +38,17 @@ A high-fidelity YouTube frontend clone built as a **Single Page Application (SPA
 ## 📂 Project Structure
 
 ```text
-├── icons/               # SVG assets (Search, Notifications, Thumb-up, etc.)
+├── icons/               # UI assets (Search, Upload, Notifications, etc.)
 ├── scripts/
-│   └── app.js           # Core React logic, Custom Hooks, and Components
+│   └── app.js           # Core React logic, routing, and state management
 ├── styles/
-│   ├── general.css      # Layout resets and global body variables
+│   ├── general.css      # Layout resets and global variables
 │   ├── header.css       # Navigation bar and search styling
-│   ├── sidebar.css      # Sidebar states and link hover effects
-│   └── video.css        # Responsive grid and Video Page layouts
-├── thumbnails/          # Video preview and channel assets
-├── dataset.json         # Mock database for videos and notifications
-├── youtube.html         # Main entry point (loads React via CDN)
+│   ├── sidebar.css      # Sidebar and category link styles
+│   └── video.css        # Video grid and player page layouts
+├── thumbnails/          # Video preview images
+├── dataset.json         # Mock database for videos and sidebar data
+├── youtube.html         # Main entry point (HTML skeleton)
 └── README.md
 
 ```
@@ -67,12 +59,12 @@ A high-fidelity YouTube frontend clone built as a **Single Page Application (SPA
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/your-username/youtube-clone.git
+git clone https://github.com/osh-mkumar/Youtube-FrontendClone.git
 
 ```
 
 
-2. **Run with a Local Server:**
+2. **Open with a Local Server:**
 Since the app uses `fetch()` to load `dataset.json`, you must run it through a server (like **Live Server** in VS Code) to avoid CORS policy restrictions.
 3. **Persistence:**
 Interact with the app! Your likes, subscriptions, and profile changes will remain even after you refresh the page.
@@ -81,14 +73,10 @@ Interact with the app! Your likes, subscriptions, and profile changes will remai
 
 ## 🧠 Logic Breakdown
 
-### State Hydration (`useDataset` Hook)
+### State Hydration
 
-The app utilizes a custom hook that serves as a mini-Redux. It fetches base data and immediately merges it with `localStorage` to ensure the UI reflects the user's specific history (e.g., read vs. unread notifications).
+The app utilizes a custom hook that serves as a mini-state manager. It fetches base data and immediately merges it with `localStorage` to ensure the UI reflects the user's specific history (e.g., subscribed channels and unread notifications).
 
 ### Engagement Persistence
 
-All interactions are keyed to the video ID in LocalStorage:
-
-* `like_{id}` / `dislike_{id}`: Boolean flags for engagement.
-* `counts_{id}`: Numeric values for engagement totals.
-* `comments_{id}`: Array of comment objects.
+All interactions are keyed to the video ID in LocalStorage, ensuring that likes, dislikes, and comments are specific to each video and persist across sessions.
