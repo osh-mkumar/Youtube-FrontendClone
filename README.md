@@ -1,7 +1,5 @@
 # YouTube Clone -  Single Page Application (SPA)
 
-### 🔗 [View Live Demo And Test It Yourself!](https://osh-mkumar.github.io/Youtube-FrontendClone/#/)
-
 A high-fidelity YouTube frontend clone built as a **Single Page Application (SPA)**. This project replicates the core user experience of YouTube, featuring dynamic video rendering, real-time search, and a robust persistence layer using LocalStorage.
 
 ---
